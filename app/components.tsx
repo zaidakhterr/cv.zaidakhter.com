@@ -70,7 +70,7 @@ export const Links = ({
 };
 
 export const SectionTitle = ({ text }: { text: string }) => {
-  return <h2 className="text-center text-lg font-semibold border-b border-zinc-300 mt-3 mb-3 pb-1">{text}</h2>;
+  return <h2 className="text-center text-lg font-semibold border-b border-sky-200 mt-3 mb-3 pb-1">{text}</h2>;
 };
 
 export const Section = ({
