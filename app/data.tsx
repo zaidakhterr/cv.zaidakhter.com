@@ -49,13 +49,9 @@ export const data = {
     //   icon: <IconBrandX/>,
     // },
   ],
-  summary: (
-    <>
-      I am a software engineer with 4+ years of experience and a proven track record in developing innovative
-      applications. I have successfully delivered projects for businesses of all sizes and am now seeking a full-time,
-      high-impact technical role.
-    </>
-  ),
+  summary:
+    "I am a software engineer with 4+ years of experience and a proven track record in developing innovative applications. I have successfully delivered projects for businesses of all sizes and am now seeking a full-time, high-impact technical role.",
+
   experience: [
     {
       company: "Upwork",
@@ -103,19 +99,9 @@ export const data = {
       position: "Associate JavaScript Developer",
       period: "Mar 2020 - Dec 2020",
       details: [
-        <>
-          Responsibilities included writing modern and performant code for a diverse array of clients, developing
-          pixel-perfect user interfaces, and debugging code.
-        </>,
-        <>
-          Communicated and collaborated with a team of engineers and clients on a weekly basis, using platforms such as
-          Slack, Trello, Skype, and Zoom
-        </>,
-        <>
-          Worked on several full-stack applications and implemented key features such as a real-time notification
-          system, localization for an eCommerce site, a custom video player for a driving hazards test, a Kanban board
-          to manage deals, etc.
-        </>,
+        "Responsibilities included writing modern and performant code for a diverse array of clients, developing pixel-perfect user interfaces, and debugging code.",
+        "Communicated and collaborated with a team of engineers and clients on a weekly basis, using platforms such as Slack, Trello, Skype, and Zoom",
+        "Worked on several full-stack applications and implemented key features such as a real-time notification system, localization for an eCommerce site, a custom video player for a driving hazards test, a Kanban board to manage deals, etc.",
       ],
     },
   ],
@@ -126,6 +112,80 @@ export const data = {
       location: "Karachi, PK",
       degree: "Bachelor of Engineering, Software. (CGPA: 3.62)",
       period: "Oct 2018 - Oct 2022",
+    },
+  ],
+
+  activities: [
+    {
+      club: "Google Developer Student Clubs",
+      location: "Karachi, PK",
+      position: "Management Lead",
+      period: "Aug 2021 - Aug 2022",
+      details: [
+        "Established strong channels of communication with team members, vendors, and participants.",
+        "Successfully conducted workshops on Flutter, Web 3.0, and Entrepreneurship for students.",
+      ],
+    },
+    {
+      club: "ACM NEDUET",
+      location: "Karachi, PK",
+      position: "Manager Registrations",
+      period: "Aug 2021 - Aug 2022",
+      details: [
+        "Streamlined the registration process for attendees by improving communication and eliminating unnecessary steps, making it more effective and simplified.",
+        "Co-led a student team to facilitate smooth operations during ITEC and coordinated logistics, scheduling, and resource management for the event.",
+      ],
+    },
+  ],
+
+  certifications: [
+    {
+      name: "Upwork Skill Certification - Javascript Front-End Development",
+      provider: "Upwork",
+      issued: "Dec 2021",
+    },
+    {
+      name: "Introduction to Programming Using HTML and CSS Exam 98-383",
+      provider: "Microsoft",
+      issued: "Dec 2020",
+      certificationId: "2rC3-XMhk",
+    },
+  ],
+
+  skills: [
+    {
+      title: "Soft Skills",
+      details: [
+        "Excellent written and verbal communication, strong problem-solving skills, good time management, team collaboration, ability to work under pressure, and meet deadlines.",
+      ],
+    },
+    // {
+    //   title: "Software Engineering Skills",
+    //   details: [
+    //     "Software Design and Architecture, Software Requirement Gathering, Project Management, Team Collaboration.",
+    //   ],
+    // },
+    {
+      title: "Programming Languages",
+      details: ["JavaScript, TypeScript, SQL, C, C++, Python."],
+    },
+    {
+      title: "Front-end Technologies",
+      details: ["HTML, CSS, ReactJS, NextJS, Remix, GatsbyJS, Redux, Tailwind CSS, GraphQL."],
+    },
+    {
+      title: "Back-end Technologies",
+      details: ["Node.js, Express.js, Nest.js, REST APIs, GraphQL APIs, WebSockets, Serverless functions."],
+    },
+    {
+      title: "Databases",
+      details: ["MySQL, PostgreSQL, MongoDB, Firestore."],
+    },
+    {
+      title: "Platforms & Tools",
+      details: [
+        "Git, GitHub, AWS, Stripe, Twilio, Auth0, Planetscale, Supabase, Firebase, Cloudflare, Vercel, Contentful, WordPress, Strapi, DatoCMS.",
+      ],
     },
   ],
 };

@@ -1,11 +1,12 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { IconPrinter } from "@tabler/icons-react";
 
 export const PrintCV = () => {
   return (
     <button
-      className="fixed right-6 bottom-6 w-12 h-12 rounded-full bg-zinc-200 flex items-center justify-center print:hidden"
+      className="fixed right-6 bottom-6 w-12 h-12 rounded-full bg-sky-100 border border-sky-200 shadow-xl text-sky-600 flex items-center justify-center print:hidden"
       onClick={() => {
         window.print();
       }}
@@ -24,7 +25,7 @@ export const Page = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const PageTitle = ({ text }: { text: string }) => {
-  return <h1 className="text-center text-2xl font-semibold">{text}</h1>;
+  return <h1 className="text-center text-2xl font-semibold text-sky-500">{text}</h1>;
 };
 
 export const PageSubTitle = ({ text }: { text: string }) => {
@@ -35,7 +36,7 @@ export const Link = ({ href, children }: { href: string; children: React.ReactNo
   return (
     <a href={href} className="group relative leading-5" target="_blank" rel="noopener noreferrer">
       {children}
-      <span className="w-full h-px bg-zinc-200 absolute bottom-0 left-0 group-hover:bg-zinc-400 transition-colors" />
+      <span className="w-full h-px bg-sky-200 absolute bottom-0 left-0 group-hover:bg-sky-400 transition-colors" />
     </a>
   );
 };
@@ -77,22 +78,34 @@ export const Section = ({
   line1End,
   line2,
   line2End,
+  compact = false,
 }: {
   line1: string;
   line1End?: string;
   line2?: string;
   line2End?: string;
+  compact?: boolean;
 }) => {
   return (
     <>
-      <div className="flex items-center justify-between mt-3">
+      <div className={cn("flex items-center justify-between", compact ? "mt-1" : "mt-3")}>
         <h3 className="font-semibold">{line1}</h3>
         <p>{line1End}</p>
       </div>
-      <div className="flex items-center justify-between mb-3">
+      <div className={cn("flex items-center justify-between", compact ? "mb-0" : "mb-3")}>
         <p>{line2}</p>
         <p>{line2End}</p>
       </div>
     </>
+  );
+};
+
+export const SectionList = ({ items }: { items: React.ReactNode[] }) => {
+  return (
+    <ul className="ml-4 print:ml-5 list-disc marker:text-sky-500">
+      {items.map((item, idx) => (
+        <li key={idx}>{item}</li>
+      ))}
+    </ul>
   );
 };
