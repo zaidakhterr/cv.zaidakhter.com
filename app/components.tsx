@@ -6,7 +6,7 @@ import { IconPrinter } from "@tabler/icons-react";
 export const PrintCV = () => {
   return (
     <button
-      className="fixed right-6 bottom-6 w-12 h-12 rounded-full bg-sky-100 border border-sky-200 shadow-xl text-sky-600 flex items-center justify-center print:hidden"
+      className="fixed right-6 bottom-6 w-14 h-14 rounded-full bg-zinc-100 border border-zinc-300 flex items-center justify-center print:hidden shadow-lg hover:bg-zinc-200 transition-colors"
       onClick={() => {
         window.print();
       }}

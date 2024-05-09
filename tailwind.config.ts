@@ -33,12 +33,12 @@ export default {
         serif: ["var(--font-serif)", ...defaultTheme.fontFamily.serif],
         body: ["var(--font-body)", ...defaultTheme.fontFamily.sans],
       },
-      boxShadow: {
-        xl: "6px 6px 0 var(--tw-shadow-color)",
-        lg: "4px 4px 0 var(--tw-shadow-color)",
-        md: "3px 3px 0 var(--tw-shadow-color)",
-        sm: "2px 2px 0 var(--tw-shadow-color)",
-      },
+      // boxShadow: {
+      //   xl: "6px 6px 0 var(--tw-shadow-color)",
+      //   lg: "4px 4px 0 var(--tw-shadow-color)",
+      //   md: "3px 3px 0 var(--tw-shadow-color)",
+      //   sm: "2px 2px 0 var(--tw-shadow-color)",
+      // },
     },
   },
 } satisfies Config;
