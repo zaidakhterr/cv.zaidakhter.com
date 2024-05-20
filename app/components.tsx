@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { IconPrinter } from "@tabler/icons-react";
+import Image, { StaticImageData } from "next/image";
 
 export const PrintCV = () => {
   return (
@@ -25,11 +26,11 @@ export const Page = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const PageTitle = ({ text }: { text: string }) => {
-  return <h1 className="text-center text-2xl font-semibold text-blue-600">{text}</h1>;
+  return <h1 className="text-2xl font-semibold text-blue-600">{text}</h1>;
 };
 
 export const PageSubTitle = ({ text }: { text: string }) => {
-  return <p className="text-center text-lg mb-1">{text}</p>;
+  return <p className="text-lg mb-1">{text}</p>;
 };
 
 export const Link = ({ href, children }: { href: string; children: React.ReactNode }) => {
@@ -52,7 +53,7 @@ export const Links = ({
   }[];
 }) => {
   return (
-    <div className="flex items-center justify-center gap-2 mb-4">
+    <div className="flex items-center gap-2 mb-4">
       {links.map((link, idx) => (
         <>
           <Link key={link.name} href={link.href}>
@@ -69,8 +70,44 @@ export const Links = ({
   );
 };
 
+export const Header = ({
+  image,
+  title,
+  subtitle,
+  links,
+}: {
+  image: StaticImageData;
+  title: string;
+  subtitle: string;
+  links: {
+    name: string;
+    text: string;
+    href: string;
+    icon: JSX.Element;
+  }[];
+}) => {
+  return (
+    <div className="flex gap-4 justify-between">
+      <div>
+        <PageTitle text={title} />
+        <PageSubTitle text={subtitle} />
+        <Links links={links} />
+      </div>
+      <Image
+        src={image}
+        alt={title}
+        style={{
+          width: 94,
+          height: 94,
+        }}
+        className="-mt-2 rounded-full"
+      />
+    </div>
+  );
+};
+
 export const SectionTitle = ({ text }: { text: string }) => {
-  return <h2 className="text-center text-lg font-semibold border-b border-blue-600/25 mt-3 mb-3 pb-1">{text}</h2>;
+  return <h2 className="text-lg font-semibold border-b border-blue-600/25 mt-3 mb-3 pb-1">{text}</h2>;
 };
 
 export const Section = ({

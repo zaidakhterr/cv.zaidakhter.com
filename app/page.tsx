@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Links, Page, PageSubTitle, PageTitle, PrintCV, Section, SectionList, SectionTitle } from "./components";
+import { Header, Page, PrintCV, Section, SectionList, SectionTitle } from "./components";
 import { data } from "./data";
 
 export default function CV() {
@@ -7,9 +7,7 @@ export default function CV() {
     <>
       <main id="cv" className="p-6 print:p-0">
         <Page>
-          <PageTitle text={data.name} />
-          <PageSubTitle text={data.position} />
-          <Links links={data.links} />
+          <Header image={data.image} title={data.name} subtitle={data.position} links={data.links} />
 
           <SectionTitle text="Summary" />
           <p>{data.summary}</p>

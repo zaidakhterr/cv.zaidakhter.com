@@ -6,11 +6,16 @@ import {
   // IconBrandUpwork,
   // IconBrandX,
 } from "@tabler/icons-react";
+import zaidImage from "./zaid-blue.png";
+// import zaidImage from "./zaid-dark.png";
+// import zaidImage from "./zaid-grayscale.png";
+// import zaidImage from "./zaid-transparent.png";
 import { Link } from "./components";
 
 export const data = {
   name: "Muhammad Zaid Akhter",
   position: "Software Engineer",
+  image: zaidImage,
   links: [
     {
       name: "Email",
