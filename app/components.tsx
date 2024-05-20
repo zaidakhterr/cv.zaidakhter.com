@@ -25,7 +25,7 @@ export const Page = ({ children }: { children: React.ReactNode }) => {
 };
 
 export const PageTitle = ({ text }: { text: string }) => {
-  return <h1 className="text-center text-2xl font-semibold text-sky-500">{text}</h1>;
+  return <h1 className="text-center text-2xl font-semibold text-blue-600">{text}</h1>;
 };
 
 export const PageSubTitle = ({ text }: { text: string }) => {
@@ -36,7 +36,7 @@ export const Link = ({ href, children }: { href: string; children: React.ReactNo
   return (
     <a href={href} className="group relative leading-5" target="_blank" rel="noopener noreferrer">
       {children}
-      <span className="w-full h-px bg-sky-200 absolute bottom-0 left-0 group-hover:bg-sky-400 transition-colors" />
+      <span className="w-full h-px bg-blue-600/30 absolute bottom-0 left-0 group-hover:bg-blue-600/50 transition-colors" />
     </a>
   );
 };
@@ -70,7 +70,7 @@ export const Links = ({
 };
 
 export const SectionTitle = ({ text }: { text: string }) => {
-  return <h2 className="text-center text-lg font-semibold border-b border-sky-200 mt-3 mb-3 pb-1">{text}</h2>;
+  return <h2 className="text-center text-lg font-semibold border-b border-blue-600/25 mt-3 mb-3 pb-1">{text}</h2>;
 };
 
 export const Section = ({
@@ -102,7 +102,7 @@ export const Section = ({
 
 export const SectionList = ({ items }: { items: React.ReactNode[] }) => {
   return (
-    <ul className="ml-4 print:ml-5 list-disc marker:text-sky-500">
+    <ul className="ml-4 print:ml-5 list-disc marker:text-blue-600">
       {items.map((item, idx) => (
         <li key={idx}>{item}</li>
       ))}

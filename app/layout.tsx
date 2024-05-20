@@ -36,7 +36,7 @@ export default function RootLayout({
           inter.variable,
           lora.variable,
           body.variable,
-          "w-screen overflow-x-hidden font-sans selection:bg-zinc-900 selection:text-zinc-50"
+          "w-screen overflow-x-hidden font-sans selection:bg-blue-600 selection:text-white"
         )}
       >
         {children}

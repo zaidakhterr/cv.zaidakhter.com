@@ -64,32 +64,35 @@ export const data = {
         // </>,
         <>Achieved the Top Rated Plus badge (top 3% of Upwork talent) with a 100% job success rate.</>,
         <>
-          Worked with a hybrid fintech solutions provider to develop the front-end of their user-facing dashboard, a
-          custom presentation app, and several internal tools. I implemented features such as data visualization,
-          real-time editing, drag-and-drop editing, and chat. (
-          <Link href="https://planlogic.com.au">planlogic.com.au</Link>)
+          <Link href="https://planlogic.com.au">Planlogic</Link>: Developed the front end of their user-facing
+          dashboard, a custom presentation app, and several internal tools while implementing key features such as data
+          visualization, real-time editing, drag-and-drop editing, and chat.
         </>,
         <>
-          Worked with an investment platform to develop user-facing pages, admin pages, and several landing pages for
-          marketing the platform. I used Next.js, TypeScript, and Tailwind CSS. (
-          <Link href="https://marketxventures.com">marketxventures.com</Link>)
+          <Link href="https://marketxventures.com">MarketX</Link>: Enhanced their existing user-facing pages and
+          developed new admin pages, as well as several landing pages for marketing the platform, using Next.js,
+          TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.
         </>,
         <>
-          Worked with a security and investigations company to develop multiple pages for their insights dashboard. I
-          also assisted in automating various internal workflows and eliminated unnecessary code from the project to
-          enhance reliability and performance. (<Link href="https://privacybrain.com">privacybrain.com</Link>)
+          <Link href="https://www.linkedin.com/company/privacybrain/about/">PrivacyBrain</Link>: Built multiple pages
+          for their insights dashboard, automated various internal workflows using Retool and Airtable, eliminated
+          unnecessary code from the project, and upgraded old React class components to use hooks, enhancing reliability
+          and performance.
         </>,
         <>
-          Developed a custom headless e-commerce solution using WordPress, Next.js, and several third-party APIs, such
-          as Stripe, Afterpay, GiftUp, and Guesty, in collaboration with a digital agency. (
-          <Link href="https://wpmdigital.com.au">wpmdigital.com.au</Link>)
+          <Link href="https://dattabaumstudio.com">Datta+Baum Studio</Link>: Developed an already designed website using
+          Astro and Tailwind CSS, added interactive components using React and integrated web serial to allow for
+          resetting watch time.
         </>,
         <>
-          Collaborated with a pharmaceutical company to develop and enhance multiple web-based software applications.
-          The objective was to manage shrinkage, streamline store operations, and enhance customer service. The
-          technologies utilized included ReactJS, NextJS, NodeJS, MySQL, AWS, and more. (
-          <Link href="https://concertrx.com">concertrx.com</Link>,{" "}
-          <Link href="https://shrinkman.com">shrinkman.com</Link>)
+          <Link href="https://wpmdigital.com.au">WPM Digital</Link>: Collaborated with WPM Digital to build a custom
+          headless e-commerce solution using WordPress (as a Headless CMS), Redis, Next.js, and several third-party
+          APIs, such as Google Maps, Stripe, MailGun, Afterpay, GiftUp, and more.
+        </>,
+        <>
+          <Link href="https://concertrx.com">ConcertRx</Link>: Built a web-based software to enhance the pharmacy
+          patient experience using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, MySQL. I also deployed the backend
+          on AWS EC2 and built the landing page using Next.js.
         </>,
       ],
     },
