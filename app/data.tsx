@@ -156,18 +156,18 @@ export const data = {
   ],
 
   skills: [
-    {
-      title: "Soft Skills",
-      details: [
-        "Excellent written and verbal communication, strong problem-solving skills, good time management, team collaboration, ability to work under pressure, and meet deadlines.",
-      ],
-    },
     // {
-    //   title: "Software Engineering Skills",
+    //   title: "Soft Skills",
     //   details: [
-    //     "Software Design and Architecture, Software Requirement Gathering, Project Management, Team Collaboration.",
+    //     "Excellent written and verbal communication, strong problem-solving skills, good time management, team collaboration, ability to work under pressure, and meet deadlines.",
     //   ],
     // },
+    {
+      title: "Software Engineering",
+      details: [
+        "Software Design and Architecture, Software Requirement Gathering, Project Management, Team Collaboration, and good Time Management",
+      ],
+    },
     {
       title: "Programming Languages",
       details: ["JavaScript, TypeScript, SQL, C, C++, Python."],
@@ -182,7 +182,7 @@ export const data = {
     },
     {
       title: "Databases",
-      details: ["MySQL, PostgreSQL, MongoDB, Firestore."],
+      details: ["MySQL, PostgreSQL, MongoDB, Firestore, Redis."],
     },
     {
       title: "Platforms & Tools",
