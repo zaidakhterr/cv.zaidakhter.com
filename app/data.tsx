@@ -127,8 +127,8 @@ export const data = {
       position: "Full-stack Developer",
       period: "Mar 2022 - Present",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
+        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et.",
+        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt.",
       ],
     },
     {
@@ -137,8 +137,8 @@ export const data = {
       position: "Full-stack Developer",
       period: "Apr 2022 - Present",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
+        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et.",
+        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt.",
       ],
     },
     {

@@ -57,7 +57,7 @@ export default function CV() {
             ))}
           </SectionContainer>
 
-          {/* <SectionContainer>
+          <SectionContainer>
             <SectionTitle text="Certifications" />
             {data.certifications.map((cert, idx) => (
               <Section
@@ -67,7 +67,7 @@ export default function CV() {
                 line2={`${cert.provider}${cert.certificationId ? ` (Certification ID: ${cert.certificationId})` : ""}`}
               />
             ))}
-          </SectionContainer> */}
+          </SectionContainer>
 
           {/* <SectionContainer>
             <SectionTitle text="Leadership & Activities" />
