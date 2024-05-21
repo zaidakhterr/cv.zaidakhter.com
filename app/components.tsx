@@ -25,48 +25,16 @@ export const Page = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const PageTitle = ({ text }: { text: string }) => {
-  return <h1 className="text-2xl font-semibold text-blue-600">{text}</h1>;
-};
-
-export const PageSubTitle = ({ text }: { text: string }) => {
-  return <p className="text-lg mb-1">{text}</p>;
-};
-
 export const Link = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
-    <a href={href} className="group relative leading-5" target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      className="group relative leading-5 flex items-center gap-2 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
-      <span className="w-full h-px bg-blue-600/30 absolute bottom-0 left-0 group-hover:bg-blue-600/50 transition-colors" />
     </a>
-  );
-};
-
-export const Links = ({
-  links,
-}: {
-  links: {
-    name: string;
-    text: string;
-    href: string;
-    icon: JSX.Element;
-  }[];
-}) => {
-  return (
-    <div className="flex items-center gap-2 mb-4">
-      {links.map((link, idx) => (
-        <>
-          <Link key={link.name} href={link.href}>
-            {link.text}
-          </Link>
-          {idx < links.length - 1 && (
-            <span key={`seperator-${idx}`} className="text-zinc-400">
-              |
-            </span>
-          )}
-        </>
-      ))}
-    </div>
   );
 };
 
@@ -87,27 +55,38 @@ export const Header = ({
   }[];
 }) => {
   return (
-    <div className="flex gap-4 justify-between">
-      <div>
-        <PageTitle text={title} />
-        <PageSubTitle text={subtitle} />
-        <Links links={links} />
-      </div>
+    <div className="flex gap-4 mb-8">
       <Image
         src={image}
         alt={title}
         style={{
-          width: 94,
-          height: 94,
+          width: 90,
+          height: 90,
         }}
-        className="-mt-2 rounded-full"
+        className="rounded-sm"
       />
+      <div>
+        <h1 className="text-3xl font-bold text-zinc-900">{title}</h1>
+        <p className="text-lg mb-1">{subtitle}</p>
+      </div>
+      <div className="flex flex-col items-start gap-1 text-sm ml-auto">
+        {links.map((link, idx) => (
+          <Link key={idx} href={link.href}>
+            {link.icon}
+            {link.text}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
 
+export const SectionContainer = ({ children }: { children: React.ReactNode }) => {
+  return <div className="mb-8">{children}</div>;
+};
+
 export const SectionTitle = ({ text }: { text: string }) => {
-  return <h2 className="text-lg font-semibold border-b border-blue-600/25 mt-3 mb-3 pb-1">{text}</h2>;
+  return <h2 className="font-semibold border-b border-zinc-900/25 mb-3 uppercase">{text}</h2>;
 };
 
 export const Section = ({
@@ -125,11 +104,11 @@ export const Section = ({
 }) => {
   return (
     <>
-      <div className={cn("flex items-center justify-between", compact ? "mt-1" : "mt-3")}>
+      <div className={cn("flex items-center justify-between")}>
         <h3 className="font-semibold">{line1}</h3>
         <p>{line1End}</p>
       </div>
-      <div className={cn("flex items-center justify-between", compact ? "mb-0" : "mb-3")}>
+      <div className={cn("flex items-center justify-between", compact ? "mb-0" : "mb-1")}>
         <p>{line2}</p>
         <p>{line2End}</p>
       </div>
@@ -139,7 +118,7 @@ export const Section = ({
 
 export const SectionList = ({ items }: { items: React.ReactNode[] }) => {
   return (
-    <ul className="ml-4 print:ml-5 list-disc marker:text-blue-600">
+    <ul className="ml-4 print:ml-5 list-disc marker:text-zinc-900 mb-1">
       {items.map((item, idx) => (
         <li key={idx}>{item}</li>
       ))}
