@@ -77,43 +77,8 @@ export const data = {
       link: "https://www.upwork.com/freelancers/zaid",
       details: [
         "Achieved the Top Rated Plus badge (top 3% of Upwork talent), while maintaining a professional and responsive approach resulting in a 100% job success score.",
-        "Completed projects for clients from the United States, Australia, the UK, Germany, Singapore, etc.",
+        "Completed 10+ projects for clients from the United States, Australia, Germany, Singapore, etc.",
         // "Completed projects for clients from the United States, Australia, the UK, Germany, Singapore, and other countries.",
-        // <>Achieved the Top Rated Plus badge (top 3% of Upwork talent) with a 100% job success rate.</>,
-        // <>
-        //   Profile Link: <Link href="https://www.upwork.com/freelancers/zaid">upwork.com/freelancers/zaid</Link>
-        // </>,
-        // <>
-        //   <Link href="https://planlogic.com.au">Planlogic</Link>: Developed the front end of their user-facing
-        //   dashboard, a custom presentation app, and several internal tools while implementing key features such as data
-        //   visualization, real-time editing, drag-and-drop editing, and chat.
-        // </>,
-        // <>
-        //   <Link href="https://marketxventures.com">MarketX</Link>: Enhanced their existing user-facing pages and
-        //   developed new admin pages, as well as several landing pages for marketing the platform, using Next.js,
-        //   TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.
-        // </>,
-        // <>
-        //   <Link href="https://www.linkedin.com/company/privacybrain/about/">PrivacyBrain</Link>: Built multiple pages
-        //   for their insights dashboard, automated various internal workflows using Retool and Airtable, eliminated
-        //   unnecessary code from the project, and upgraded old React class components to use hooks, enhancing reliability
-        //   and performance.
-        // </>,
-        // <>
-        //   <Link href="https://dattabaumstudio.com">Datta+Baum Studio</Link>: Developed an already designed website using
-        //   Astro and Tailwind CSS, added interactive components using React and integrated web serial to allow for
-        //   resetting watch time.
-        // </>,
-        // <>
-        //   <Link href="https://wpmdigital.com.au">WPM Digital</Link>: Collaborated with WPM Digital to build a custom
-        //   headless e-commerce solution using WordPress (as a Headless CMS), Redis, Next.js, and several third-party
-        //   APIs, such as Google Maps, Stripe, MailGun, Afterpay, GiftUp, and more.
-        // </>,
-        // <>
-        //   <Link href="https://concertrx.com">ConcertRx</Link>: Built a web-based software to enhance the pharmacy
-        //   patient experience using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, MySQL. I also deployed the backend
-        //   on AWS EC2 and built the landing page using Next.js.
-        // </>,
       ],
     },
     {
@@ -143,7 +108,7 @@ export const data = {
           Collaborated with <InlineLink href="https://wpmdigital.com.au">WPM Digital</InlineLink> to build a booking
           platform that offers restorative experiences in secluded regional areas across Australia.
         </>,
-        "Designed and developed a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
+        "Engineered a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
         "Implemented a seamless checkout system with Afterpay (pay-as-you-go) and GiftUp (gift cards) integrations to increase sales.",
       ],
     },
@@ -176,10 +141,10 @@ export const data = {
       period: "Feb 2022 - Aug 2023",
       details: [
         "MarketX provides high-net-worth investors access to private tech investment opportunities.",
-        "Enhanced existing user-facing pages and developed new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
+        "Enhanced existing user-facing pages and created new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
         <>
-          Implemented a redesign of the <InlineLink href="https://app.inf.finance">Infinify</InlineLink> platform to
-          improve the overall user experience and developed a landing page for the platform.
+          Completed a redesign of the <InlineLink href="https://app.inf.finance">Infinify</InlineLink> platform
+          improving the overall user experience and composed a landing page for the platform.
         </>,
       ],
     },
@@ -202,13 +167,14 @@ export const data = {
       details: [
         "Planlogic offers financial planning solutions to simplify the advice process for financial advisers throughout Australia.",
         <>
-          Worked as the lead front-end developer in a team of 4 to build the{" "}
+          Performed as the lead front-end developer in a team of 4 to build the{" "}
           <InlineLink href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</InlineLink>,
           adding key features such as data visualization, real-time editing, drag-and-drop editing, and chat.
         </>,
         <>
-          Developed the <InlineLink href="https://digitalsoa.com.au/">Digital SOA Tool</InlineLink> using React.js and
-          Tailwind CSS and added engaging visuals to make complex information accessible to financial planners.
+          Spearheaded the development of the <InlineLink href="https://digitalsoa.com.au/">Digital SOA Tool</InlineLink>{" "}
+          using React.js and Tailwind CSS and added engaging visuals to make complex information accessible to financial
+          planners.
         </>,
       ],
     },
@@ -218,7 +184,7 @@ export const data = {
     {
       institution: "NED University of Engineering and Technology",
       location: "Karachi, PK",
-      degree: "Bachelor of Engineering, Software. (CGPA: 3.62)",
+      degree: "Bachelor of Engineering, Software",
       period: "Oct 2018 - Oct 2022",
     },
   ],
@@ -261,16 +227,10 @@ export const data = {
   ],
 
   skills: [
-    // {
-    //   title: "Soft Skills",
-    //   details: [
-    //     "Excellent written and verbal communication, strong problem-solving skills, good time management, team collaboration, ability to work under pressure, and meet deadlines.",
-    //   ],
-    // },
     {
       title: "Software Engineering",
       details: [
-        "Software Design and Architecture, Software Requirement Gathering, Project Management, Team Collaboration, and good Time Management",
+        "Data Structures and Algorithms, Software Design and Architecture, Software Requirement Gathering, Project Management.",
       ],
     },
     {
