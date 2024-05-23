@@ -3,11 +3,13 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconMapPin,
+  IconPhone,
   // IconBrandUpwork,
   // IconGlobe,
   // IconBrandX,
 } from "@tabler/icons-react";
 import zaidImage from "./zaid-new-dark.png";
+import { Link } from "./components";
 
 export const data = {
   name: "Muhammad Zaid Akhter",
@@ -19,6 +21,12 @@ export const data = {
       text: "zaidakhter1202@gmail.com",
       href: "mailto:zaidakhter1202@gmail.com",
       icon: <IconMail size={14} />,
+    },
+    {
+      name: "Phone",
+      text: "+92 331 8101315",
+      href: "tel:+923318101315",
+      icon: <IconPhone size={14} />,
     },
     {
       name: "LinkedIn",
@@ -66,10 +74,11 @@ export const data = {
       location: "Remote",
       position: "Full-stack Developer",
       period: "Sep 2020 - Present",
+      link: "https://www.upwork.com/freelancers/zaid",
       details: [
-        "Achieved the Top Rated Plus badge (top 3% of Upwork talent) within three years on the platform.",
-        "Maintained a professional and responsive approach resulting in 100% job success score.",
-        "Completed projects with clients from the United States, Australia, the UK, Germany, Singapore, and other countries.",
+        "Achieved the Top Rated Plus badge (top 3% of Upwork talent), while maintaining a professional and responsive approach resulting in a 100% job success score.",
+        "Completed projects for clients from the United States, Australia, the UK, Germany, Singapore, etc.",
+        // "Completed projects for clients from the United States, Australia, the UK, Germany, Singapore, and other countries.",
         // <>Achieved the Top Rated Plus badge (top 3% of Upwork talent) with a 100% job success rate.</>,
         // <>
         //   Profile Link: <Link href="https://www.upwork.com/freelancers/zaid">upwork.com/freelancers/zaid</Link>
@@ -112,6 +121,7 @@ export const data = {
       location: "Karachi, PK",
       position: "Associate JavaScript Developer",
       period: "Mar 2020 - Dec 2020",
+      link: "https://zenveus.com/",
       details: [
         "Responsibilities included writing modern and performant code for a diverse array of clients, developing pixel-perfect user interfaces, and debugging code.",
         // "Communicated and collaborated with a team of engineers and clients on a weekly basis, using platforms such as Slack, Trello, Skype, and Zoom",
@@ -122,63 +132,84 @@ export const data = {
 
   projects: [
     {
-      company: "WPM Digital",
-      link: "https://wpmdigital.com.au",
-      position: "Full-stack Developer",
+      company: "Booking Platform",
+      // company: "Into the Wild Escapes",
+      // link: "https://intothewildescapes.com",
+      // position: "Full-stack Developer",
       period: "Mar 2022 - Present",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et.",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt.",
+        // "Into The Wild Escapes offers restorative experiences in secluded regional areas across Australia.",
+        <>
+          Collaborated with <Link href="https://wpmdigital.com.au">WPM Digital</Link> to build a booking platform that
+          offers restorative experiences in secluded regional areas across Australia.
+        </>,
+        "Designed and developed a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
+        "Implemented a seamless checkout system with Afterpay (pay-as-you-go) and GiftUp (gift cards) integrations to increase sales.",
       ],
     },
     {
       company: "ConcertRx",
       link: "https://concertrx.com",
-      position: "Full-stack Developer",
+      // position: "Full-stack Developer",
       period: "Apr 2022 - Present",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et.",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt.",
+        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
+        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
+        "Built internal tools to help the team verify customer information and onboard them efficiently.",
       ],
     },
     {
       company: "Datta + Baum Studio",
       link: "https://dattabaumstudio.com",
-      position: "Front-end Developer",
+      // position: "Front-end Developer",
       period: "Jun 2023 - Dec 2023",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
+        "Datta + Baum Studio is a product design studio that creates thought-provoking designs.",
+        "Developed an already designed website using Astro, React.js and Tailwind CSS and integrated web serial to allow for resetting the watch time from the browser.",
+        "Optimized the site for performance and accessibility, scoring 95+ for all pages on Lighthouse.",
       ],
     },
-    {
-      company: "MarketX",
-      link: "https://marketxventures.com",
-      position: "Full-stack Developer",
-      period: "Feb 2022 - Aug 2023",
-      details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
-      ],
-    },
-    {
-      company: "PrivacyBrain",
-      link: "https://www.linkedin.com/company/privacybrain/about/",
-      position: "Full-stack Developer",
-      period: "Sep 2021 - Sep 2022",
-      details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
-      ],
-    },
+    // {
+    //   company: "MarketX",
+    //   link: "https://marketxventures.com",
+    //   // position: "Full-stack Developer",
+    //   period: "Feb 2022 - Aug 2023",
+    //   details: [
+    //     "MarketX provides high-net-worth investors access to private tech investment opportunities.",
+    //     "Enhanced existing user-facing pages and developed new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
+    //     <>
+    //       Implemented a redesign of the <Link href="https://app.inf.finance">Infinify</Link> platform to improve the
+    //       overall user experience.
+    //     </>,
+    //   ],
+    // },
+    // {
+    //   company: "PrivacyBrain",
+    //   link: "https://www.linkedin.com/company/privacybrain/about/",
+    //   // position: "Full-stack Developer",
+    //   period: "Sep 2021 - Sep 2022",
+    //   details: [
+    //     "PrivacyBrain is a service that helps companies safeguard their employees by removing their exposed personal information from the internet.",
+    //     "Developed parts of the insights dashboard and automated workflows using Retool and PostgREST.",
+    //     "Improved performance and reliability by eliminating unnecessary code from the project and upgrading old React class components to use hooks.",
+    //   ],
+    // },
     {
       company: "Planlogic",
-      link: "https://planlogic.com.au",
-      position: "Front-end Developer",
+      link: "https://www.planlogic.com.au",
+      // position: "Front-end Developer",
       period: "Oct 2020 - Aug 2022",
       details: [
-        "Magna culpa et culpa eu in magna aute reprehenderit incididunt ipsum exercitation ullamco elit et. ",
-        "Irure dolore incididunt cupidatat ipsum tempor ullamco et officia labore. Consectetur adipisicing adipisicing et nulla est tempor sit non qui ea eiusmod incididunt. ",
+        "Planlogic offers financial planning solutions to simplify the advice process for financial advisers throughout Australia.",
+        <>
+          Worked as the lead front-end developer in a team of 4 to build the{" "}
+          <Link href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</Link>, with key
+          features such as data visualization, real-time editing, drag-and-drop editing, and chat.
+        </>,
+        <>
+          Developed the <Link href="https://digitalsoa.com.au/">Digital SOA Tool</Link> using React.js and Tailwind CSS
+          and added engaging visuals to make complex information accessible to financial planners.
+        </>,
       ],
     },
   ],

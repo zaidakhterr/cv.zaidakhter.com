@@ -18,7 +18,13 @@ export default function CV() {
             <SectionTitle text="Experience" />
             {data.experience.map((exp, idx) => (
               <div key={idx} className="mb-4">
-                <Section line1={exp.position} line1End={exp.period} line2={exp.company} line2End={exp.location} />
+                <Section
+                  line1={exp.company}
+                  line1End={exp.period}
+                  line2={exp.position}
+                  line2End={exp.location}
+                  link={exp.link}
+                />
                 <SectionList items={exp.details} />
               </div>
             ))}
@@ -28,7 +34,7 @@ export default function CV() {
             <SectionTitle text="Projects" />
             {data.projects.slice(0, 2).map((proj, idx) => (
               <div key={idx} className="mb-4">
-                <Section line1={proj.position} line1End={proj.period} line2={proj.company} />
+                <Section line1={proj.company} line1End={proj.period} line2={proj.position} link={proj.link} />
                 <SectionList items={proj.details} />
               </div>
             ))}
@@ -38,7 +44,7 @@ export default function CV() {
           <SectionContainer>
             {data.projects.slice(2).map((proj, idx) => (
               <div key={idx} className="mb-4">
-                <Section line1={proj.company} line2={proj.position} line2End={proj.period} />
+                <Section line1={proj.company} line1End={proj.period} line2={proj.position} link={proj.link} />
                 <SectionList items={proj.details} />
               </div>
             ))}

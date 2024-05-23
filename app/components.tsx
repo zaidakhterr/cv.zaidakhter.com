@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { IconPrinter } from "@tabler/icons-react";
+import { IconArrowUpRight, IconPrinter } from "@tabler/icons-react";
 import Image, { StaticImageData } from "next/image";
 
 export const PrintCV = () => {
@@ -29,11 +29,12 @@ export const Link = ({ href, children }: { href: string; children: React.ReactNo
   return (
     <a
       href={href}
-      className="group relative leading-5 flex items-center gap-2 hover:underline"
+      className="group relative leading-5 inline-flex items-center hover:underline font-medium"
       target="_blank"
       rel="noopener noreferrer"
     >
       {children}
+      <IconArrowUpRight size={15} />
     </a>
   );
 };
@@ -55,7 +56,7 @@ export const Header = ({
   }[];
 }) => {
   return (
-    <div className="flex gap-4 mb-8">
+    <div className="flex gap-4 mb-6">
       <Image
         src={image}
         alt={title}
@@ -86,7 +87,7 @@ export const SectionContainer = ({ children }: { children: React.ReactNode }) =>
 };
 
 export const SectionTitle = ({ text }: { text: string }) => {
-  return <h2 className="font-semibold border-b border-zinc-900/25 mb-3 uppercase">{text}</h2>;
+  return <h2 className="font-semibold border-b border-zinc-900/25 mb-3 uppercase tracking-wide">{text}</h2>;
 };
 
 export const Section = ({
@@ -95,17 +96,35 @@ export const Section = ({
   line2,
   line2End,
   compact = false,
+  link,
 }: {
   line1: string;
   line1End?: string;
   line2?: string;
   line2End?: string;
   compact?: boolean;
+  link?: string;
 }) => {
   return (
     <>
       <div className={cn("flex items-center justify-between")}>
-        <h3 className="font-semibold">{line1}</h3>
+        <h3 className="font-semibold">
+          {link ? (
+            <>
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center gap-1 hover:underline"
+              >
+                {line1}
+                <IconArrowUpRight size={16} />
+              </a>
+            </>
+          ) : (
+            line1
+          )}
+        </h3>
         <p>{line1End}</p>
       </div>
       <div className={cn("flex items-center justify-between", compact ? "mb-0" : "mb-1")}>
@@ -118,7 +137,7 @@ export const Section = ({
 
 export const SectionList = ({ items }: { items: React.ReactNode[] }) => {
   return (
-    <ul className="ml-4 print:ml-5 list-disc marker:text-zinc-900 mb-1">
+    <ul className="ml-4 print:ml-5 list-disc marker:text-zinc-900/25 mb-1">
       {items.map((item, idx) => (
         <li key={idx}>{item}</li>
       ))}
