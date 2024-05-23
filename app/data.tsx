@@ -9,7 +9,7 @@ import {
   // IconBrandX,
 } from "@tabler/icons-react";
 import zaidImage from "./zaid-new-dark.png";
-import { Link } from "./components";
+import { InlineLink } from "./components";
 
 export const data = {
   name: "Muhammad Zaid Akhter",
@@ -140,8 +140,8 @@ export const data = {
       details: [
         // "Into The Wild Escapes offers restorative experiences in secluded regional areas across Australia.",
         <>
-          Collaborated with <Link href="https://wpmdigital.com.au">WPM Digital</Link> to build a booking platform that
-          offers restorative experiences in secluded regional areas across Australia.
+          Collaborated with <InlineLink href="https://wpmdigital.com.au">WPM Digital</InlineLink> to build a booking
+          platform that offers restorative experiences in secluded regional areas across Australia.
         </>,
         "Designed and developed a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
         "Implemented a seamless checkout system with Afterpay (pay-as-you-go) and GiftUp (gift cards) integrations to increase sales.",
@@ -203,12 +203,12 @@ export const data = {
         "Planlogic offers financial planning solutions to simplify the advice process for financial advisers throughout Australia.",
         <>
           Worked as the lead front-end developer in a team of 4 to build the{" "}
-          <Link href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</Link>, with key
-          features such as data visualization, real-time editing, drag-and-drop editing, and chat.
+          <InlineLink href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</InlineLink>,
+          with key features such as data visualization, real-time editing, drag-and-drop editing, and chat.
         </>,
         <>
-          Developed the <Link href="https://digitalsoa.com.au/">Digital SOA Tool</Link> using React.js and Tailwind CSS
-          and added engaging visuals to make complex information accessible to financial planners.
+          Developed the <InlineLink href="https://digitalsoa.com.au/">Digital SOA Tool</InlineLink> using React.js and
+          Tailwind CSS and added engaging visuals to make complex information accessible to financial planners.
         </>,
       ],
     },

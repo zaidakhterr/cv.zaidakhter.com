@@ -29,6 +29,19 @@ export const Link = ({ href, children }: { href: string; children: React.ReactNo
   return (
     <a
       href={href}
+      className="group relative leading-5 inline-flex items-center gap-2 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+};
+
+export const InlineLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+  return (
+    <a
+      href={href}
       className="group relative leading-5 inline-flex items-center hover:underline font-medium"
       target="_blank"
       rel="noopener noreferrer"
