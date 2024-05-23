@@ -42,7 +42,7 @@ export const InlineLink = ({ href, children }: { href: string; children: React.R
   return (
     <a
       href={href}
-      className="group relative leading-5 inline-flex items-center hover:underline font-medium"
+      className="group relative inline-flex items-center hover:underline font-medium"
       target="_blank"
       rel="noopener noreferrer"
     >

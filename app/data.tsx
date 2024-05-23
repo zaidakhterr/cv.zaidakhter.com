@@ -204,7 +204,7 @@ export const data = {
         <>
           Worked as the lead front-end developer in a team of 4 to build the{" "}
           <InlineLink href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</InlineLink>,
-          with key features such as data visualization, real-time editing, drag-and-drop editing, and chat.
+          adding key features such as data visualization, real-time editing, drag-and-drop editing, and chat.
         </>,
         <>
           Developed the <InlineLink href="https://digitalsoa.com.au/">Digital SOA Tool</InlineLink> using React.js and
