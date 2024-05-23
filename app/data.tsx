@@ -169,20 +169,20 @@ export const data = {
         "Optimized the site for performance and accessibility, scoring 95+ for all pages on Lighthouse.",
       ],
     },
-    // {
-    //   company: "MarketX",
-    //   link: "https://marketxventures.com",
-    //   // position: "Full-stack Developer",
-    //   period: "Feb 2022 - Aug 2023",
-    //   details: [
-    //     "MarketX provides high-net-worth investors access to private tech investment opportunities.",
-    //     "Enhanced existing user-facing pages and developed new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
-    //     <>
-    //       Implemented a redesign of the <Link href="https://app.inf.finance">Infinify</Link> platform to improve the
-    //       overall user experience.
-    //     </>,
-    //   ],
-    // },
+    {
+      company: "MarketX",
+      link: "https://marketxventures.com",
+      // position: "Full-stack Developer",
+      period: "Feb 2022 - Aug 2023",
+      details: [
+        "MarketX provides high-net-worth investors access to private tech investment opportunities.",
+        "Enhanced existing user-facing pages and developed new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
+        <>
+          Implemented a redesign of the <InlineLink href="https://app.inf.finance">Infinify</InlineLink> platform to
+          improve the overall user experience and developed a landing page for the platform.
+        </>,
+      ],
+    },
     // {
     //   company: "PrivacyBrain",
     //   link: "https://www.linkedin.com/company/privacybrain/about/",
