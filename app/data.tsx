@@ -97,6 +97,17 @@ export const data = {
 
   projects: [
     {
+      company: "ConcertRx",
+      link: "https://concertrx.com",
+      // position: "Full-stack Developer",
+      period: "Apr 2022 - Present",
+      details: [
+        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
+        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
+        "Built internal tools to help the team verify customer information and onboard them efficiently.",
+      ],
+    },
+    {
       company: "Booking Platform",
       // company: "Into the Wild Escapes",
       // link: "https://intothewildescapes.com",
@@ -109,18 +120,7 @@ export const data = {
           platform that offers restorative experiences in secluded regional areas across Australia.
         </>,
         "Engineered a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
-        "Implemented a seamless checkout system with Afterpay (pay-as-you-go) and GiftUp (gift cards) integrations to increase sales.",
-      ],
-    },
-    {
-      company: "ConcertRx",
-      link: "https://concertrx.com",
-      // position: "Full-stack Developer",
-      period: "Apr 2022 - Present",
-      details: [
-        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
-        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
-        "Built internal tools to help the team verify customer information and onboard them efficiently.",
+        "Implemented a seamless checkout system with Afterpay (buy now, pay later) and GiftUp (gift cards) integrations to increase sales.",
       ],
     },
     {
