@@ -19,7 +19,7 @@ export const PrintCV = () => {
 
 export const Page = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-[297mm] w-[210mm] ml-auto mr-auto px-16 py-16 bg-white mb-6 shadow print:shadow-none print:mb-0">
+    <div className="h-[297mm] w-[210mm] ml-auto mr-auto px-14 py-12 bg-white mb-6 shadow print:shadow-none print:mb-0">
       {children}
     </div>
   );
@@ -58,7 +58,7 @@ export const Header = ({
   subtitle,
   links,
 }: {
-  image: StaticImageData;
+  image?: StaticImageData;
   title: string;
   subtitle: string;
   links: {
@@ -69,16 +69,18 @@ export const Header = ({
   }[];
 }) => {
   return (
-    <div className="flex gap-4 mb-6">
-      <Image
-        src={image}
-        alt={title}
-        style={{
-          width: 90,
-          height: 90,
-        }}
-        className="rounded-sm"
-      />
+    <div className="flex gap-4">
+      {image && (
+        <Image
+          src={image}
+          alt={title}
+          style={{
+            width: 90,
+            height: 90,
+          }}
+          className="rounded-sm"
+        />
+      )}
       <div>
         <h1 className="text-3xl font-bold text-zinc-900">{title}</h1>
         <p className="text-lg mb-1">{subtitle}</p>
@@ -96,7 +98,7 @@ export const Header = ({
 };
 
 export const SectionContainer = ({ children }: { children: React.ReactNode }) => {
-  return <div className="mb-8">{children}</div>;
+  return <div className="mb-3">{children}</div>;
 };
 
 export const SectionTitle = ({ text }: { text: string }) => {

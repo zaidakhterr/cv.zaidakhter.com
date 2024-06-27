@@ -3,41 +3,36 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconMapPin,
-  IconPhone,
-  // IconBrandUpwork,
-  // IconGlobe,
-  // IconBrandX,
+  // IconPhone
 } from "@tabler/icons-react";
-import zaidImage from "./zaid-new-dark.png";
-import { InlineLink } from "./components";
+// import { InlineLink } from "./components";
 
 export const data = {
-  name: "Muhammad Zaid Akhter",
+  name: "SAJID ALI SADRUDDIN",
   position: "Software Engineer",
-  image: zaidImage,
   links: [
+    // {
+    //   name: "Phone",
+    //   text: "+92 334 3922889",
+    //   href: "tel:+923343922889",
+    //   icon: <IconPhone size={14} />,
+    // },
     {
       name: "Email",
-      text: "zaidakhter1202@gmail.com",
-      href: "mailto:zaidakhter1202@gmail.com",
+      text: "sajidali12@outlook.com",
+      href: "mailto:sajidali12@outlook.com",
       icon: <IconMail size={14} />,
     },
     {
-      name: "Phone",
-      text: "+92 331 8101315",
-      href: "tel:+923318101315",
-      icon: <IconPhone size={14} />,
-    },
-    {
       name: "LinkedIn",
-      text: "linkedin.com/in/zaidakhterr",
-      href: "https://www.linkedin.com/in/zaidakhterr/",
+      text: "linkedin.com/in/sajid-ali-sadruddin",
+      href: "https://www.linkedin.com/in/sajid-ali-sadruddin/",
       icon: <IconBrandLinkedin size={14} />,
     },
     {
       name: "GitHub",
-      text: "github.com/zaidakhterr",
-      href: "https://github.com/zaidakhterr",
+      text: "github.com/sajidali22",
+      href: "https://github.com/sajidali22",
       icon: <IconBrandGithub size={14} />,
     },
     {
@@ -46,145 +41,58 @@ export const data = {
       href: "https://www.google.com/maps/place/Karachi",
       icon: <IconMapPin size={14} />,
     },
-    // {
-    //   name: "Upwork",
-    //   text: "upwork.com/freelancers/zaid",
-    //   href: "https://www.upwork.com/freelancers/zaid",
-    //   icon: <IconBrandUpwork size={14} />,
-    // },
-    // {
-    //   name: "Website",
-    //   text: "zaidakhter.com",
-    //   href: "https://zaidakhter.com",
-    //   icon: <IconGlobe size={14}/>,
-    // },
-    // {
-    //   name: "(X) Twitter",
-    //   text: "x.com/zaidakhterr",
-    //   href: "https://x.com/zaidakhterr",
-    //   icon: <IconBrandX size={14}/>,
-    // },
   ],
   summary:
-    "As a software engineer with over 4 years of experience, I have worked extensively with technologies such as React.js and Node.js. I have successfully delivered projects for businesses of all sizes worldwide, and I am now seeking a full-time, high-impact technical role.",
+    "Self-driven and focused Software Engineer with knowledge of Machine Learning field. Results-driven professional with good technical skills, firm grasp of business needs and understanding of user requirements gathering. Assesses risks, troubleshoots problems and conducts tests. Excellent communication and planning abilities.",
 
   experience: [
     {
-      company: "Upwork",
+      company: "Entrollics",
       location: "Remote",
-      position: "Full-stack Developer",
-      period: "Sep 2020 - Present",
-      link: "https://www.upwork.com/freelancers/zaid",
+      position: "Senior Python Developer",
+      period: "Mar 2024 - Present",
+      link: "https://entrolics.com/",
       details: [
-        "Achieved the Top Rated Plus badge (top 3% of Upwork talent), while maintaining a professional and responsive approach resulting in a 100% job success score.",
-        "Completed 10+ projects for clients from the United States, Australia, Germany, Singapore, etc.",
-        // "Completed projects for clients from the United States, Australia, the UK, Germany, Singapore, and other countries.",
+        "Developed a multi-tenant micro-service using FastAPI to integrate with large language models (Gemini, OpenAI, Anthropic) for document-based conversational AI, leveraging Redis for conversation history management.",
+        "Deployed scalable micro services on Google Kubernetes Engine (GKE) with Google authentication, ensuring robust and secure deployment pipelines.",
+        "Designed and implemented Airflow DAGs to extract relevant context from Elasticsearch via vector search, facilitating accurate information retrieval for LLM-based query responses.",
+        "Architected backend solutions on Google Vertex AI, utilizing BigQuery for managing large-scale unstructured data and Google Datastore for creating user-specific search engines.",
+        "Developed a custom load balancer for a file conversion microservice using TypeScript, utilizing etcd for distributed key-value storage to manage pod-to-file URL mappings. Enhanced system reliability and efficiency, reducing file conversion times by 30% and ensuring immediate user feedback.",
       ],
     },
     {
-      company: "Zenveus",
+      company: "Folio3",
       location: "Karachi, PK",
-      position: "Associate JavaScript Developer",
-      period: "Mar 2020 - Dec 2020",
-      link: "https://zenveus.com/",
+      position: "Software Engineer",
+      period: "Jul 2022 - Feb 2024",
+      link: "https://folio3.com/",
       details: [
-        "Responsibilities included writing modern and performant code for a diverse array of clients, developing pixel-perfect user interfaces, and debugging code.",
-        // "Communicated and collaborated with a team of engineers and clients on a weekly basis, using platforms such as Slack, Trello, Skype, and Zoom",
-        "Worked on several full-stack applications and implemented key features such as a real-time notification system, localization for an eCommerce site, a custom video player for a driving hazards test, a Kanban board to manage deals, etc.",
+        "Developed and maintained DocuScan, an OCR product that reads receipts and invoices of any format and syncs information to Dynamics 365 ERP system.",
+        "Revised existing Flask modules and directly involved in designing architecture for DocuScan product to reduce processing time and increase consumer accessibility.",
+        "Worked on new developmental features such as Azure feature management for Folio3 integration product “Burq”, which is a low-code no-code integration solution for ERP and E-commerce.",
+      ],
+    },
+    {
+      company: "The Disrupt Labs",
+      location: "Karachi, PK",
+      position: "AI Engineer",
+      period: "Dec 2020 - Mar 2022",
+      link: "https://thedisruptlabs.com/",
+      details: [
+        "Developed an industrial computer vision solution that identifies torn and unclean loom surfaces using object detection models (Yolov5) trained on over 30k images using PyTorch and image augmentation libraries.",
+        "Trained multiple state-of-the-art object detection and classification models using AWS EC2 instances and multi-GPU servers, now deployed in multiple industrial factories.",
+        "Responsible for developing these systems end-to-end: dataset collection, prototyping/evaluating different algorithms, and productionizing them to run at scale.",
       ],
     },
   ],
 
-  projects: [
-    {
-      company: "ConcertRx",
-      link: "https://concertrx.com",
-      // position: "Full-stack Developer",
-      period: "Apr 2022 - Present",
-      details: [
-        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
-        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
-        "Built internal tools to help the team verify customer information and onboard them efficiently.",
-      ],
-    },
-    {
-      company: "Booking Platform",
-      // company: "Into the Wild Escapes",
-      // link: "https://intothewildescapes.com",
-      // position: "Full-stack Developer",
-      period: "Mar 2022 - Present",
-      details: [
-        // "Into The Wild Escapes offers restorative experiences in secluded regional areas across Australia.",
-        <>
-          Collaborated with <InlineLink href="https://wpmdigital.com.au">WPM Digital</InlineLink> to build a booking
-          platform that offers restorative experiences in secluded regional areas across Australia.
-        </>,
-        "Engineered a custom headless e-commerce solution using WordPress (as a headless CMS), Redis, Next.js, and several third-party APIs such as Google Maps, Stripe, MailGun, etc.",
-        "Implemented a seamless checkout system with Afterpay (buy now, pay later) and GiftUp (gift cards) integrations to increase sales.",
-      ],
-    },
-    {
-      company: "Datta + Baum Studio",
-      link: "https://dattabaumstudio.com",
-      // position: "Front-end Developer",
-      period: "Jun 2023 - Dec 2023",
-      details: [
-        "Datta + Baum Studio is a product design studio that creates thought-provoking designs.",
-        "Developed an already designed website using Astro, React.js and Tailwind CSS and integrated web serial to allow for resetting the watch time from the browser.",
-        "Optimized the site for performance and accessibility, scoring 95+ for all pages on Lighthouse.",
-      ],
-    },
-    {
-      company: "MarketX",
-      link: "https://marketxventures.com",
-      // position: "Full-stack Developer",
-      period: "Feb 2022 - Aug 2023",
-      details: [
-        "MarketX provides high-net-worth investors access to private tech investment opportunities.",
-        "Enhanced existing user-facing pages and created new admin pages, as well as several landing pages for marketing, using Next.js, TypeScript, Prisma ORM, GraphQL, and Tailwind CSS.",
-        <>
-          Completed a redesign of the <InlineLink href="https://app.inf.finance">Infinify</InlineLink> platform
-          improving the overall user experience and composed a landing page for the platform.
-        </>,
-      ],
-    },
-    // {
-    //   company: "PrivacyBrain",
-    //   link: "https://www.linkedin.com/company/privacybrain/about/",
-    //   // position: "Full-stack Developer",
-    //   period: "Sep 2021 - Sep 2022",
-    //   details: [
-    //     "PrivacyBrain is a service that helps companies safeguard their employees by removing their exposed personal information from the internet.",
-    //     "Developed parts of the insights dashboard and automated workflows using Retool and PostgREST.",
-    //     "Improved performance and reliability by eliminating unnecessary code from the project and upgrading old React class components to use hooks.",
-    //   ],
-    // },
-    {
-      company: "Planlogic",
-      link: "https://www.planlogic.com.au",
-      // position: "Front-end Developer",
-      period: "Oct 2020 - Aug 2022",
-      details: [
-        "Planlogic offers financial planning solutions to simplify the advice process for financial advisers throughout Australia.",
-        <>
-          Performed as the lead front-end developer in a team of 4 to build the{" "}
-          <InlineLink href="https://www.planlogic.com.au/pay-as-you-go-paraplanning/">Digital Request Form</InlineLink>,
-          adding key features such as data visualization, real-time editing, drag-and-drop editing, and chat.
-        </>,
-        <>
-          Spearheaded the development of the <InlineLink href="https://digitalsoa.com.au/">Digital SOA Tool</InlineLink>{" "}
-          using React.js and Tailwind CSS and added engaging visuals to make complex information accessible to financial
-          planners.
-        </>,
-      ],
-    },
-  ],
+  projects: [],
 
   education: [
     {
       institution: "NED University of Engineering and Technology",
       location: "Karachi, PK",
-      degree: "Bachelor of Engineering, Software",
+      degree: "Bachelor of Engineering, Software (3.487 CGPA)",
       period: "Oct 2018 - Oct 2022",
     },
   ],
@@ -214,45 +122,26 @@ export const data = {
 
   certifications: [
     {
-      name: "Upwork Skill Certification - Javascript Front-End Development",
-      provider: "Upwork",
-      issued: "Dec 2021",
+      name: "Deep Learning.AI TensorFlow Developer",
+      provider: "Coursera",
+      issued: "Nov 2020",
+      link: "https://coursera.org/share/5b96d9e9571a12be95fa786c191f2a01",
     },
     {
-      name: "Introduction to Programming Using HTML and CSS Exam 98-383",
-      provider: "Microsoft",
-      issued: "Dec 2020",
-      certificationId: "2rC3-XMhk",
+      name: "Fundamental course in the AWS Machine Learning",
+      provider: "Udacity",
+      issued: "Jul 2020",
     },
   ],
 
   skills: [
     {
-      title: "Software Engineering",
       details: [
-        "Data Structures and Algorithms, Software Design and Architecture, Software Requirement Gathering, Project Management.",
-      ],
-    },
-    {
-      title: "Programming Languages",
-      details: ["JavaScript, TypeScript, SQL, C, C++, Python."],
-    },
-    {
-      title: "Front-end Technologies",
-      details: ["HTML, CSS, ReactJS, NextJS, Remix, GatsbyJS, Redux, Tailwind CSS, GraphQL."],
-    },
-    {
-      title: "Back-end Technologies",
-      details: ["Node.js, Express.js, Nest.js, REST APIs, GraphQL APIs, WebSockets, Serverless functions."],
-    },
-    {
-      title: "Databases",
-      details: ["MySQL, PostgreSQL, MongoDB, Firestore, Redis."],
-    },
-    {
-      title: "Platforms & Tools",
-      details: [
-        "Git, GitHub, AWS, Stripe, Twilio, Auth0, Planetscale, Supabase, Firebase, Cloudflare, Vercel, Contentful, WordPress, Strapi, DatoCMS.",
+        "Proficient in languages like Python and C#",
+        "Skilled in FastAPI, Flask, Airflow, ElasticSearch and Langchain technologies",
+        "Experienced with messaging queues, RabbitMq and Redis",
+        "Familiarity with cloud technologies in Google cloud, Azure and Aws",
+        "Knowledgeable in Google Vertex AI, Big query, Google Data-stores",
       ],
     },
   ],
