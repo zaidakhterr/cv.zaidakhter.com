@@ -9,19 +9,7 @@ const lora = Lora({ subsets: ["latin"], variable: "--font-serif" });
 const body = Pathway_Extreme({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
-  title: "Zaid Akhter's CV",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://cv.zaidakhter.com",
-    siteName: "Zaid Akhter's CV",
-    title: "Zaid Akhter's CV",
-  },
-  twitter: {
-    creator: "@zaidakhterr",
-    site: "@zaidakhterr",
-    title: "Zaid Akhter's CV",
-  },
+  title: "SAJID ALI SADRUDDIN's CV",
 };
 
 export default function RootLayout({
