@@ -76,8 +76,10 @@ export const Header = ({
         style={{
           width: 90,
           height: 90,
+          // height: 100,
         }}
-        className="rounded-sm"
+        className="rounded-sm object-cover "
+        // className="rounded-sm object-cover object-[0px,-5px]"
       />
       <div>
         <h1 className="text-3xl font-bold text-zinc-900">{title}</h1>

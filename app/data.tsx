@@ -8,6 +8,7 @@ import {
   // IconGlobe,
   // IconBrandX,
 } from "@tabler/icons-react";
+// import zaidImage from "./ZAID_AKHTER_GERMANY.jpg";
 import zaidImage from "./zaid-new-dark.png";
 import { InlineLink } from "./components";
 
@@ -66,7 +67,7 @@ export const data = {
     // },
   ],
   summary:
-    "As a software engineer with over 4 years of experience, I have worked extensively with technologies such as React.js and Node.js. I have successfully delivered projects for businesses of all sizes worldwide and I am now seeking opportunities to further expand my knowledge and create a positive impact with my skills.",
+    "As a software engineer with over 3 years of experience, I have worked extensively with technologies such as React.js and Node.js. I have successfully delivered projects for businesses of all sizes worldwide and I am now seeking opportunities to further expand my knowledge and create a positive impact with my skills.",
 
   experience: [
     {
