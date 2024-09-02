@@ -66,14 +66,14 @@ export const data = {
     // },
   ],
   summary:
-    "As a software engineer with over 4 years of experience, I have worked extensively with technologies such as React.js and Node.js. I have successfully delivered projects for businesses of all sizes worldwide, and I am now seeking a full-time, high-impact technical role.",
+    "As a software engineer with over 4 years of experience, I have worked extensively with technologies such as React.js and Node.js. I have successfully delivered projects for businesses of all sizes worldwide and I am now seeking opportunities to further expand my knowledge and create a positive impact with my skills.",
 
   experience: [
     {
       company: "Upwork",
       location: "Remote",
       position: "Full-stack Developer",
-      period: "Sep 2020 - Present",
+      period: "Sep 2020 - Jul 2024",
       link: "https://www.upwork.com/freelancers/zaid",
       details: [
         "Achieved the Top Rated Plus badge (top 3% of Upwork talent), while maintaining a professional and responsive approach resulting in a 100% job success score.",
@@ -97,22 +97,11 @@ export const data = {
 
   projects: [
     {
-      company: "ConcertRx",
-      link: "https://concertrx.com",
-      // position: "Full-stack Developer",
-      period: "Apr 2022 - Present",
-      details: [
-        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
-        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
-        "Built internal tools to help the team verify customer information and onboard them efficiently.",
-      ],
-    },
-    {
       company: "Booking Platform",
       // company: "Into the Wild Escapes",
       // link: "https://intothewildescapes.com",
       // position: "Full-stack Developer",
-      period: "Mar 2022 - Present",
+      period: "Mar 2022 - Jul 2024",
       details: [
         // "Into The Wild Escapes offers restorative experiences in secluded regional areas across Australia.",
         <>
@@ -123,6 +112,18 @@ export const data = {
         "Implemented a seamless checkout system with Afterpay (buy now, pay later) and GiftUp (gift cards) integrations to increase sales.",
       ],
     },
+    {
+      company: "ConcertRx",
+      link: "https://concertrx.com",
+      // position: "Full-stack Developer",
+      period: "Apr 2022 - Apr 2024",
+      details: [
+        "ConcertRx is a software to help pharmacies deliver a superior patient experience through effortless, personalized, and proactive interventions.",
+        "Designed and deployed the software from scratch, leading a team of 2 to build it using React.js, Nest.js, Redis, Auth0, Stripe, Twilio, and MySQL.",
+        "Built internal tools to help the team verify customer information and onboard them efficiently.",
+      ],
+    },
+
     {
       company: "Datta + Baum Studio",
       link: "https://dattabaumstudio.com",
@@ -186,6 +187,7 @@ export const data = {
       location: "Karachi, PK",
       degree: "Bachelor of Engineering, Software",
       period: "Oct 2018 - Oct 2022",
+      details: ["Final Grade: 3.62/4"],
     },
   ],
 
@@ -229,9 +231,7 @@ export const data = {
   skills: [
     {
       title: "Software Engineering",
-      details: [
-        "Data Structures and Algorithms, Software Design and Architecture, Software Requirement Gathering, Project Management.",
-      ],
+      details: ["Data Structures and Algorithms, Software Design and Architecture, Project Management."],
     },
     {
       title: "Programming Languages",
@@ -243,12 +243,14 @@ export const data = {
     },
     {
       title: "Back-end Technologies",
-      details: ["Node.js, Express.js, Nest.js, REST APIs, GraphQL APIs, WebSockets, Serverless functions."],
+      details: [
+        "Node.js, Express.js, Nest.js, MySQL, PostgreSQL, MongoDB, Redis, WebSockets, REST APIs, GraphQL APIs, Serverless functions.",
+      ],
     },
-    {
-      title: "Databases",
-      details: ["MySQL, PostgreSQL, MongoDB, Firestore, Redis."],
-    },
+    // {
+    //   title: "Databases",
+    //   details: ["MySQL, PostgreSQL, MongoDB, Firestore, Redis."],
+    // },
     {
       title: "Platforms & Tools",
       details: [

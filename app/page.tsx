@@ -15,6 +15,16 @@ export default function CV() {
           </SectionContainer>
 
           <SectionContainer>
+            <SectionTitle text="Education" />
+            {data.education.map((edu, idx) => (
+              <div key={idx}>
+                <Section line1={edu.institution} line1End={edu.location} line2={edu.degree} line2End={edu.period} />
+                <SectionList items={edu.details} />
+              </div>
+            ))}
+          </SectionContainer>
+
+          <SectionContainer>
             <SectionTitle text="Experience" />
             {data.experience.map((exp, idx) => (
               <div key={idx} className="mb-4">
@@ -32,7 +42,7 @@ export default function CV() {
 
           <SectionContainer>
             <SectionTitle text="Projects" />
-            {data.projects.slice(0, 2).map((proj, idx) => (
+            {data.projects.slice(0, 1).map((proj, idx) => (
               <div key={idx} className="mb-4">
                 <Section line1={proj.company} line1End={proj.period} link={proj.link} />
                 <SectionList items={proj.details} />
@@ -42,24 +52,11 @@ export default function CV() {
         </Page>
         <Page>
           <SectionContainer>
-            {data.projects.slice(2).map((proj, idx) => (
+            {data.projects.slice(1).map((proj, idx) => (
               <div key={idx} className="mb-4">
                 <Section line1={proj.company} line1End={proj.period} link={proj.link} />
                 <SectionList items={proj.details} />
               </div>
-            ))}
-          </SectionContainer>
-
-          <SectionContainer>
-            <SectionTitle text="Education" />
-            {data.education.map((edu, idx) => (
-              <Section
-                key={idx}
-                line1={edu.institution}
-                line1End={edu.location}
-                line2={edu.degree}
-                line2End={edu.period}
-              />
             ))}
           </SectionContainer>
 
